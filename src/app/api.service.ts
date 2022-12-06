@@ -8,7 +8,7 @@ export class ApiService {
 
   constructor(private http: HttpClient) { }
   getWifi(){
-    return this.http.get('http://localhost:3000/wifi').subscribe((data) => {
+    return this.http.get('https://back-eth.onrender.com/wifi').subscribe((data) => {
       console.log(data)
       });
 }
